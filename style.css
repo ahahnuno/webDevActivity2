@@ -1,0 +1,21 @@
+body
+{
+	overflow: hidden;
+	user-select: none;
+
+	background-color: black;
+	color: white;
+
+	font-family: Major Mono Display;
+}
+
+.box
+{
+	margin-top: 0.75em;
+	width: 16em;
+	height: 16em;
+
+	border: dotted white;
+	border-width: 0.1em;
+	border-radius: 0.5em;
+}
