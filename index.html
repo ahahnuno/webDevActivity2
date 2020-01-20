@@ -72,6 +72,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					<h1 class="button">
 					🡢
 					</h1>
+					<h2 class="fib">fibonacci(0)</h2>
 				</div>
 			</div>
 
@@ -91,6 +92,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			{
 				window.location.href = "https://adamhahn.app";
 			});
+
+			var fi = 0;
+
+			$(".fib").on("click", function (event)
+			{
+				alert(fib(fi));
+				fi++;
+				$(".fib").html("fibonacci(" + fi + ")");
+			});
+
+			function fib(n)
+			{
+				if (n < 2)
+				{
+					return n;
+				}
+				return fib(n - 1) + fib (n - 2);
+			}
 		</script>
 	</body>
 </html>

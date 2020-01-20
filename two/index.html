@@ -42,7 +42,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					<h1 class="button">
 					🡠
 					</h1>
-					<input type="color" id="html5colorpicker" onchange="changeColor(value);" value="#000000" style="width:85%;"></input>
+					<input type="color" id="html5colorpicker" onchange="document.body.style.backgroundColor = value" value="#000000" style="width:85%;"></input>
 				</div>
 
 				<div class="pure-u-sm-1-4 box animated fadeIn delay-2s">
@@ -78,11 +78,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			{
 				window.history.back();
 			});
-
-			function changeColor(String val)
-			{
-				document.body.style.backgroundColor = val;
-			}
 		</script>
 	</body>
 </html>

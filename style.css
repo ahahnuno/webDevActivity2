@@ -30,7 +30,7 @@ img
 	border-radius: 0.5em;
 }
 
-.button:hover, .link:hover
+.button:hover, .link:hover, .fib:hover
 {
 	cursor: pointer; 
 	background-color: white;
