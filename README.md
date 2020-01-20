@@ -1,2 +1,4 @@
 # webDevActivity2
-Intro to Web Development - Practice HTML, CSS, Git and GitHub
+Course: Intro to Web Development
+Description: Practice HTML, CSS, Git and GitHub
+Note: sub-directory 'two' contains the second page, sub-directory 'media' contains media

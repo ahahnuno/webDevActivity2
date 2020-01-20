@@ -11,6 +11,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<head>
 		<title>Activity 2</title>
 
+		<!--jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 		<!--pure-->
 		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css"/>
@@ -34,28 +37,33 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<div class="pure-u-2-3">
 				<div class="pure-u-sm-1-4 box animated fadeIn delay-2s">
 					<h1>
+					Go back to the lame page.
+					</h1>
+					<h1 class="button">
 					🡠
 					</h1>
+					<input type="color" id="html5colorpicker" onchange="changeColor(value);" value="#000000" style="width:85%;"></input>
 				</div>
 
 				<div class="pure-u-sm-1-4 box animated fadeIn delay-2s">
-				
+					<h1>Coffee is my thing.</h1>
+					<h2>Here are the best 4 cups I've ever sipped from.</h2>
 				</div>
 
 				<div class="pure-u-sm-1-4 box animated fadeIn delay-2s">
-				
+					<img src="../media/coffee.jpg"></img>
 				</div>
 
 				<div class="pure-u-sm-1-4 box animated fadeIn delay-2s">
-				
+					<img src="../media/coffee2.jpg"></img>
 				</div>
 
 				<div class="pure-u-sm-1-4 box animated fadeIn delay-2s">
-				
+					<img src="../media/coffee3.jpg"></img>
 				</div>
 
 				<div class="pure-u-sm-1-4 box animated fadeIn delay-2s">
-				
+					<img src="../media/coffee4.jpg"></img>
 				</div>
 			</div>
 
@@ -65,5 +73,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				© adam hahn 2019
 			</div>
 		</center>
+		<script>
+			$(".button").on("click", function (event)
+			{
+				window.history.back();
+			});
+
+			function changeColor(String val)
+			{
+				document.body.style.backgroundColor = val;
+			}
+		</script>
 	</body>
 </html>

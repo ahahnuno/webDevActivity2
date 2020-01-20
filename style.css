@@ -15,7 +15,24 @@ body
 	width: 16em;
 	height: 16em;
 
-	border: dotted white;
+	border: solid white;
 	border-width: 0.1em;
 	border-radius: 0.5em;
+}
+
+img
+{
+	margin-top: 2em;
+
+	width: 12em;
+	height: 12em;
+
+	border-radius: 0.5em;
+}
+
+.button:hover, .link:hover
+{
+	cursor: pointer; 
+	background-color: white;
+	color: black;
 }
